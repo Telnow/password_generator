@@ -3,7 +3,7 @@ import random
 from string import digits, ascii_letters, punctuation
 
 
-def generate_password(length) -> str:
+def generate_password(length: int) -> str:
     numbers = ''.join(random.choice(digits) for _ in range(length))
     numbers_letters = ''.join(random.choice(digits + ascii_letters) for _ in range(length))
     numbers_letters_punctuation = ''.join(random.choice(digits + ascii_letters + punctuation) for _ in range(length))
